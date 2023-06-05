@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/toast.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+</head>
+
+<body class="light">
+    <header class="header">
+        <div class="header-content">
+            <a href="/"><img src="assets/images/logo.png" alt="Logo" class="logo"></a>
+            <button class="btn-theme"><img src="assets/images/light-mode.png" width="32px" height="32px" alt="Ícone sol (modo claro)"></button>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <div class="input-container">
+                <textarea class="input-text" placeholder="Digite seu texto aqui..."></textarea>
+                <p class="input-info">Apenas letras minúsculas e sem acento</p>
+            
+                <div class="buttons">
+                    <button type="button" class="btn btn-primary" id="btn-encrypt">Criptografar</button>
+                    <button type="button" class="btn" id="btn-decrypt">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="output-container">
+                <div class="no-result">
+                    <img src="assets/images/no-result.svg" alt="Background de resultado não encontrado" class="no-result-img">
+                    <h2 class="no-result-title">Nenhuma mensagem encontrada</h2>
+                    <p class="no-result-text">Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <div class="result">
+                    <p class="result-text" disabled></p>
+                    <button class="btn" id="btn-copy">Copiar</button>
+                </div>
+            </div>
+        </section>
+        <div class="toast success">
+            <p>Texto copiado!</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">Desenvolvido por <a href="/" target="_blank"><strong>Letícia Endlich</strong></a></p>
+    </footer>
+    <script src="scripts/main.js" type="module"></script>    
+</body>
+
+</html>
